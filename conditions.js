@@ -1,21 +1,10 @@
-let gate = prompt("Choose gate: a, b, or c");
-let win = false;
+// Exercise 1: Write a script that will ask the user to input a number.
+// Display the message "Bingo!" when the number is greater than 90
+//  but less than 110, otherwise display the message: "Miss". Use the if statement.
 
-switch (gate) {
-  case "a":
-    alert("Gate A: empty");
-    break;
-  case "b":
-    alert("Gate B: main prize");
-    win = true;
-    break;
-  case "c":
-    alert("Gate C: empty");
-    break;
-  default:
-    alert("No gate " + String(gate));
-}
-
-if (win) {
-  alert("Winner!");
+let number = Number(prompt("Please enter a number", 0));
+if (number > 90 && number < 110) {
+  alert("Bingo!");
+} else {
+  alert("Miss");
 }
