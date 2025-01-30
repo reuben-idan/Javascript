@@ -3,8 +3,10 @@
 //  but less than 110, otherwise display the message: "Miss". Use the if statement.
 
 let number = Number(prompt("Please enter a number", 0));
-if (number > 90 && number < 110) {
-  alert("Bingo!");
-} else {
-  alert("Miss");
-}
+// if (number > 90 && number < 110) {
+//   alert("Bingo!");
+// } else {
+//   alert("Miss");
+// }
+
+(number > 90 && number < 110) ? alert("Bingo!") : alert("Miss");
