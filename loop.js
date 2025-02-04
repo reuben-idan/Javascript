@@ -1,26 +1,12 @@
-let gate = prompt("Choose gate: a, b, or c");
-let win = false;
+let upperLimit = Number(prompt("Enter upper limit"));
+let lowerLimit = Number(prompt("Enter lower limit"));
 
-switch (gate) {
-  case "a": {
-    let message = "Gate A";
-    console.log(message);
-    break;
+if (
+  !Number.isNaN(upperLimit) &&
+  !Number.isNaN(lowerLimit) &&
+  upperLimit > lowerLimit
+) {
+  for (i = upperLimit; i >= lowerLimit; i -= 10) {
+    console.log(i);
   }
-  case "b": {
-    let message = "Gate B";
-    console.log(message);
-    break;
-  }
-  case "c": {
-    let message = "Gate C";
-    console.log(message);
-    break;
-  }
-  default:
-    alert("No gate " + String(gate));
-}
-
-if (win) {
-  alert("Winner!");
 }
