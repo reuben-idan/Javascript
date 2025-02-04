@@ -1,14 +1,26 @@
-let user = {
-    name: "Calvin",
-    surname: "Hart",
-    age: 66,
-    email: "CalvinMHart@teleworm.us"
-};
- 
-// for (let key in user) {
-//     console.log(key); // -> name, surname, age, email
-// };
+let gate = prompt("Choose gate: a, b, or c");
+let win = false;
 
-for (let key in user) {
-    console.log(`${key} -> ${user[key]}`);
-};
+switch (gate) {
+  case "a": {
+    let message = "Gate A";
+    console.log(message);
+    break;
+  }
+  case "b": {
+    let message = "Gate B";
+    console.log(message);
+    break;
+  }
+  case "c": {
+    let message = "Gate C";
+    console.log(message);
+    break;
+  }
+  default:
+    alert("No gate " + String(gate));
+}
+
+if (win) {
+  alert("Winner!");
+}
